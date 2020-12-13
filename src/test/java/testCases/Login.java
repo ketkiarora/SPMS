@@ -18,7 +18,7 @@ public class Login {
 			
 			driver.get("http://10.241.64.114:8080/mind-bms-web/");
 			driver.manage().window().maximize();
-			//driver.findElement(By.linkText("Login to SPMS")).click();
+			driver.findElement(By.linkText("Login to SPMS")).click();
 			driver.findElement(By.cssSelector("#j_username_txt")).sendKeys("rajesh.arora");
 			driver.findElement(By.id("j_password_txt")).sendKeys("12345678");
 			driver.findElement(By.xpath("(//*[contains(@type,'submit')])[2]")).click();	
